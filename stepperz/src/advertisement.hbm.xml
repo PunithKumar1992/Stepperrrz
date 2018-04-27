@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.appfone.stepperz.pojo">
+	<class name="StepAdvertisement" table="stepadvertisement">
+	<id name="ads_id" type="int">
+	<column name="ads_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="ads_type">
+	<column name="ads_type"></column>
+	</property>
+	<property name="ads_images">
+	<column name="ads_images"></column>
+	</property>
+	
+	
+	</class>
+	
+	
+	<class name="StepBanner" table="stepbanner">
+	<id name="banner_id" type="int">
+	<column name="banner_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="banner_title">
+	<column name="banner_title"></column>
+	</property>
+	<property name="banner_desc">
+	<column name="banner_desc"></column>
+	</property>
+	
+	<property name="banner_img">
+	<column name="banner_img"></column>
+	</property>
+	</class>
+	
+	
+	<class name="StepCareer" table="stepcareer">
+	<id name="career_id" type="int">
+	<column name="career_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="first_name">
+	<column name="first_name"></column>
+	</property>
+	<property name="last_name">
+	<column name="last_name"></column>
+	</property>
+	
+	<property name="email">
+	<column name="email"></column>
+	</property>
+	
+	<property name="post_applyfor">
+	<column name="post_applyfor"></column>
+	</property>
+	
+	<property name="salary_req">
+	<column name="salary_req"></column>
+	</property>
+	
+	<property name="joining_date">
+	<column name="joining_date"></column>
+	</property>
+	
+	<property name="phone">
+	<column name="phone"></column>
+	</property>
+	
+	<property name="last_company">
+	<column name="last_company"></column>
+	</property>
+	<property name="message">
+	<column name="message"></column>
+	</property>
+	
+	</class>
+	
+	
+	<class name="StepFeedback" table="stepfeedback">
+	<id name="feedback_id" type="int">
+	<column name="feedback_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="name">
+	<column name="name"></column>
+	</property>
+	<property name="email">
+	<column name="email"></column>
+	</property>
+	
+	<property name="phone_number">
+	<column name="phone_number"></column>
+	</property>
+	
+	<property name="message">
+	<column name="message"></column>
+	</property>
+	</class>
+	
+	<class name="StepKalyannagarimages" table="stepkalyannagarimages">
+	<id name="image_id" type="int">
+	<column name="image_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="image_name">
+	<column name="image_name"></column>
+	</property>
+	</class>
+	
+	<class name="StepKalyannagarvideo" table="stepkalyannagarvideo">
+	<id name="video_id" type="int">
+	<column name="video_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="video_link">
+	<column name="video_link"></column>
+	</property>
+	</class>
+	
+	<class name="StepMalleshwaramimages" table="stepmalleshwaramimages">
+	<id name="image_id" type="int">
+	<column name="image_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="image_name">
+	<column name="image_name"></column>
+	</property>
+	</class>
+	
+	<class name="StepMalleshwaramvideo" table="stepmalleshwaramvideo">
+	<id name="video_id" type="int">
+	<column name="video_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="video_link">
+	<column name="video_link"></column>
+	</property>
+	</class>
+	
+	<class name="StepRegistration" table="stepregistration">
+	<id name="reg_id" type="int">
+	<column name="reg_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="first_name">
+	<column name="first_name"></column>
+	</property>
+	<property name="last_name">
+	<column name="last_name"></column>
+	</property>
+	
+	<property name="email">
+	<column name="email"></column>
+	</property>
+	
+	<property name="address">
+	<column name="address"></column>
+	</property>
+	
+	<property name="contact_no">
+	<column name="contact_no"></column>
+	</property>
+	
+	<property name="course">
+	<column name="course"></column>
+	</property>
+	</class>
+	
+	<class name="StepSadashivnagarimages" table="stepsadashivnagarimages">
+	<id name="image_id" type="int">
+	<column name="image_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="image_name">
+	<column name="image_name"></column>
+	</property>
+	</class>
+	
+	<class name="StepSadashivnagarvideo" table="stepsadashivnagarvideo">
+	<id name="video_id" type="int">
+	<column name="video_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="video_link">
+	<column name="video_link"></column>
+	</property>
+	</class>
+	
+	<class name="StepTestimonials" table="steptestimonials">
+	<id name="test_id" type="int">
+	<column name="test_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="message">
+	<column name="message"></column>
+	</property>
+	<property name="name">
+	<column name="name"></column>
+	</property>
+	
+	
+	</class>
+	
+	
+	<class name="StepTimetable_sadashivnagr" table="steptimetable_sadashivnagr">
+	<id name="tb_id" type="int">
+	<column name="tb_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="timetable_caption">
+	<column name="timetable_caption"></column>
+	</property>
+	<property name="timetable_image">
+	<column name="timetable_image"></column>
+	</property>
+	
+	
+	</class>
+	
+	
+	<class name="StepTimetable_kalyannagar" table="steptimetable_kalyannagar">
+	<id name="tb_id" type="int">
+	<column name="tb_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="timetable_caption">
+	<column name="timetable_caption"></column>
+	</property>
+	<property name="timetable_image">
+	<column name="timetable_image"></column>
+	</property>
+	
+	
+	</class>
+	
+	
+	<class name="StepTimetable_malleshwaram" table="steptimetable_malleshwaram">
+	<id name="tb_id" type="int">
+	<column name="tb_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="timetable_caption">
+	<column name="timetable_caption"></column>
+	</property>
+	<property name="timetable_image">
+	<column name="timetable_image"></column>
+	</property>
+	
+	
+	</class>
+	<class name="StepAdminregistration" table="stepadminregistration">
+	<id name="admin_id" type="int">
+	<column name="admin_id"></column>
+	<generator class="increment"></generator>
+	</id>
+	<property name="admin_name">
+	<column name="admin_name"></column>
+	</property>
+	<property name="admin_email">
+	<column name="admin_email"></column>
+	</property>
+	<property name="admin_phone">
+	<column name="admin_phone"></column>
+	</property>
+	<property name="admin_password">
+	<column name="admin_password"></column>
+	</property>
+	
+	</class>
+	
+	
+	
+</hibernate-mapping>
