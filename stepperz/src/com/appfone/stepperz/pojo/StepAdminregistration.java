@@ -1,26 +1,12 @@
 package com.appfone.stepperz.pojo;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
-
 public class StepAdminregistration {
 	private int admin_id;
 	
-	@NotNull(message="Name is requried")
-	/*@Pattern(regexp="[a-zA-Z0-9]*")*/
+	
 	private String admin_name;
-	
-	@NotNull(message="Email is requried")
-	/*@Pattern(regexp="/^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$/",message="please enter the correct mail id ")*/
 	private String admin_email;
-	
-	
-	@NotNull(message="Phone Number is requried")
-	/*@Pattern(regexp="/(7|8|9)\\d{9}/",message="Please enter correct phone number")*/
 	private String admin_phone;
-	
-	@NotNull(message="Password is requried")
-	/*@Pattern(regexp="[a-zA-Z0-9]*")*/
 	private String admin_password;
 	public int getAdmin_id() {
 		return admin_id;

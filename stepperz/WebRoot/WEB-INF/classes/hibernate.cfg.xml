@@ -8,9 +8,9 @@
     <session-factory>  
         <property name="hbm2ddl.auto">update</property>  
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>  
-        <property name="connection.url">jdbc:mysql://localhost/chandrashekarnaik_carro</property>  
-        <property name="connection.username">appfone</property>  
-        <property name="connection.password">Appfone123</property>  
+        <property name="connection.url">jdbc:mysql://node53204-stepperzz.mycloud.by/stepperzs_stepper</property>  
+        <property name="connection.username">root</property>  
+        <property name="connection.password">IXSaqt76271</property>  
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>  
        <mapping resource="advertisement.hbm.xml"/>
    

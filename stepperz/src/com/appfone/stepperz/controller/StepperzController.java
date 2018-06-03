@@ -2,14 +2,15 @@ package com.appfone.stepperz.controller;
 
 import java.io.File;
 
+
 import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
@@ -261,7 +262,7 @@ public class StepperzController {
 	}
 	
 	@RequestMapping(value="/adminregistration")
-	public String  adminregprocessController(@Valid @ModelAttribute("adminreg") StepAdminregistration adminregg,BindingResult result )
+	public String  adminregprocessController( @ModelAttribute("adminreg") StepAdminregistration adminregg,BindingResult result )
 	{
 		
 	
@@ -1583,6 +1584,12 @@ public class StepperzController {
 		return mv;
 	}
 	
+	@RequestMapping(value="/webmail")
+	public String processForm(HttpServletRequest request) 
+{
+String redirectUrl = request.getScheme() + "://103.92.235.137:2086/etc/apps/webmail/";
+return "redirect:" + redirectUrl;
+}
 	
 }
 

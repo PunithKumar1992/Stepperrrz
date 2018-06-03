@@ -1,6 +1,5 @@
 package com.appfone.stepperz.Daoimpl;
 
-import org.apache.commons.vfs.provider.sftp.SftpClientFactory;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
