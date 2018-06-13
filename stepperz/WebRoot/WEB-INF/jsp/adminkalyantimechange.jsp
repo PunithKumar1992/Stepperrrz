@@ -182,7 +182,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-12">
                     <section class="panel">
                         <header class="panel-heading">
-                           Kalyan Nagar
+                           Kalyan Nagar Time table Change
                         </header>
                         <div class="panel-body">
                             <div class="position-center">
@@ -258,7 +258,7 @@ function Upload() {
                 image.onload = function () {
                     var height = this.height;
                     var width = this.width;
-                    if (height == 551 || width == 774) {
+                    if (height == 551 || width == 776) {
                     	alert("Uploaded image has valid Height and Width.");
                         document.getElementById('sub').disabled = false;
                         

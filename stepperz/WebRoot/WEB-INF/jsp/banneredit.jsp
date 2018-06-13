@@ -180,7 +180,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Banner
+                            Banner Edit 
                         </header>
                         <div class="panel-body">
                             <div >

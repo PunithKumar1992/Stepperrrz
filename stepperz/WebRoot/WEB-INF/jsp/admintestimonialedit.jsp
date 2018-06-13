@@ -182,7 +182,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Banner
+                           Testimonials edit
                         </header>
                         <div class="panel-body">
                             <div >
@@ -191,11 +191,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                            <form:hidden path="test_id"/>
                             <div class="col-md-3">
                                   
-                                   <form:input path="message" id="text1"/>
+                                   <form:input path="message" id="text1" placeholder="Message"/>
                                 </div>
                                 <div class="col-md-3">
                                    
-                                   <form:input path="name" id="text2"/>
+                                   <form:input path="name" id="text2" placeholder="Add Name" />
                                     </div>
                                 
                                 <div class="col-md-3">

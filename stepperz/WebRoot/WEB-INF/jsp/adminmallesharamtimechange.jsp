@@ -182,7 +182,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-12">
                     <section class="panel">
                         <header class="panel-heading">
-                           Malleshwaram
+                           Malleshwaram Time table change
                         </header>
                         <div class="panel-body">
                             <div class="position-center">
@@ -258,7 +258,7 @@ function Upload() {
                 image.onload = function () {
                     var height = this.height;
                     var width = this.width;
-                    if (height == 494 || width == 775) {
+                    if (height == 494 || width == 776) {
                     	alert("Uploaded image has valid Height and Width.");
                         document.getElementById('sub').disabled = false;
                         

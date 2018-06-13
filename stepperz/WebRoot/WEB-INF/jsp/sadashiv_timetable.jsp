@@ -100,7 +100,7 @@ audio.play();
 	out.println("<center><h3 class='title-3' style='color:black;margin-top:5%;'>"+sada_caption[i]+"</h3>");
 	out.println("<br>");
 	out.println("<div class='time1'>");
-	out.println("<img src="+impath+" alt='timetableimg' width='100%' height='auto'>");
+	out.println("<img src="+impath+" alt='timetableimg' width='80%' height='auto'>");
 	out.println("</div></center>");
 				
 				

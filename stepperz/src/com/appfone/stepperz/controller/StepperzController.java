@@ -12,6 +12,7 @@ import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import org.apache.coyote.Request;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
@@ -21,6 +22,7 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
@@ -1584,11 +1586,12 @@ public class StepperzController {
 		return mv;
 	}
 	
-	@RequestMapping(value="/webmail")
-	public String processForm(HttpServletRequest request) 
+	@RequestMapping(value="/webmail",method=RequestMethod.GET)
+	public ModelAndView processForm(HttpServletRequest request) 
 {
-String redirectUrl = request.getScheme() + "://103.92.235.137:2086/etc/apps/webmail/";
-return "redirect:" + redirectUrl;
+ ModelAndView mv = new ModelAndView();
+ mv.setViewName("redirect");
+ return mv;
 }
 	
 }
